@@ -17,3 +17,7 @@ Uninstall Package Id: ./scpflash.py --ip 127.0.0.1 --port 2222 --uninstall com.y
 Uninstall From Zip: ./scpflash.py --ip 127.0.0.1 --port 2222 --zip mypackage.zip --uninstall-zip
 Theos Example: ./scpflash.py --zip tweak.zip --theos
 ```
+# TODO:
+- after install script
+- handle directories
+- a tool for converting debs to flashable zips
