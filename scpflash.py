@@ -282,7 +282,7 @@ def main():
 	uninstall = False
 
 	try:
-		opts, args = getopt.getopt(sys.argv[1:], 'i:p:hz:tu:', ['ip=', 'port=', 'help', 'zip=', 'theos', 'uninstall=', 'uninstall-zip'])
+		opts, args = getopt.getopt(sys.argv[1:], 'i:xp:hz:tu:', ['ip=', 'port=', 'help', 'zip=', 'theos', 'uninstall=', 'uninstall-zip'])
 	except getopt.GetoptError:
 		usage(2)
 
@@ -294,6 +294,8 @@ def main():
 			usage(2)
 		elif opt in ('-i', '--ip'):
 			device_ip = arg
+		elif opt in ('-x', '--test'):
+			 exit(0);
 		elif opt in ('-p', '--port'):
 			device_port = arg
 		elif opt in ('-z', '--zip'):
